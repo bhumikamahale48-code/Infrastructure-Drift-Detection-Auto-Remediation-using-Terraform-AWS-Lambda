@@ -45,12 +45,12 @@ CloudWatch Logs
 ## 📂 Project Structure
 
 drift-detection-project/  
- ├── main.tf  
- ├── variables.tf  
- ├── outputs.tf  
- ├── lambda/  
- │    └── lambda_function.py  
- └── screenshots/  
+├── main.tf  
+├── variables.tf  
+├── outputs.tf  
+├── lambda/  
+│   └── lambda_function.py  
+└── screenshots/  
 
 ---
 
@@ -58,53 +58,69 @@ drift-detection-project/
 
 ### 🔹 Step 1: Provision Infrastructure using Terraform
 
-bash
+```bash
 terraform init
 terraform plan
 terraform apply -auto-approve
+```
 
-## 🔹 Step 2: Infrastructure Created
+---
+
+### 🔹 Step 2: Infrastructure Created
 
 Resources created:
+- EC2 Instance  
+- Security Group  
+- S3 Bucket  
 
-EC2 Instance
-Security Group
-S3 Bucket
+---
 
-🔹 Step 3: Simulate Drift
+### 🔹 Step 3: Simulate Drift
 
 Manual changes performed:
+- Added Port 80 in Security Group  
+- Changed Security Group Name  
 
-Added Port 80 in Security Group
-Changed Security Group Name
+---
 
-🔹 Step 4: Detect Drift using Terraform
-```
+### 🔹 Step 4: Detect Drift using Terraform
+
+```bash
 terraform plan
 ```
+
 Terraform detects configuration drift.
 
-🔹 Step 5: Configure Auto Remediation
-Created Lambda function
-Scheduled using EventBridge:
-```
+---
+
+### 🔹 Step 5: Configure Auto Remediation
+
+- Created Lambda function  
+- Scheduled using EventBridge:
+
+```bash
 rate(5 minutes)
 ```
 
-🔹 Step 6: Auto Remediation
+---
+
+### 🔹 Step 6: Auto Remediation
 
 Lambda automatically fixes:
+- Removes unauthorized port 80  
+- Restores EC2 tag  
 
-Removes unauthorized port 80
-Restores EC2 tag
+---
 
-tag
-🔹 Step 7: Logging
+### 🔹 Step 7: Logging
 
 All logs are stored in Amazon CloudWatch.
 
-# Lambda Function Code
-```
+---
+
+## 🧠 Lambda Function Code
+
+```python
 import boto3
 
 ec2 = boto3.client('ec2')
@@ -131,9 +147,13 @@ def lambda_handler(event, context):
     )
 
     print("Drift Remediated Successfully")
-    ```
-# 🔐 IAM Policy for Lambda
 ```
+
+---
+
+## 🔐 IAM Policy for Lambda
+
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -146,40 +166,45 @@ def lambda_handler(event, context):
   "Resource": "*"
 }
 ```
----
-🔄 Workflow
 
-Terraform Apply → Infrastructure Created
-↓
-Manual Changes (Drift)
-↓
-Terraform Plan detects drift
-↓
-EventBridge triggers Lambda
-↓
-Lambda fixes drift
-↓
-Logs stored in CloudWatch
 ---
 
-CloudWatch
+## 🔄 Workflow
 
-# 📊 Results
-Drift successfully detected
-Automatic remediation implemented
-Logs verified in CloudWatch
-No manual intervention required
+Terraform Apply → Infrastructure Created  
+↓  
+Manual Changes (Drift)  
+↓  
+Terraform Plan detects drift  
+↓  
+EventBridge triggers Lambda  
+↓  
+Lambda fixes drift  
+↓  
+Logs stored in CloudWatch  
 
-# 🔮 Future Improvements
-Integrate AWS Config for real-time drift detection
-Use Terraform Remote Backend (S3 + DynamoDB)
-Automate Terraform execution via Lambda
-Add multi-region drift detection
+---
 
-# 🏁 Conclusion
+## 📊 Results
+- Drift successfully detected  
+- Automatic remediation implemented  
+- Logs verified in CloudWatch  
+- No manual intervention required  
 
+---
+
+## 🔮 Future Improvements
+- Integrate AWS Config for real-time drift detection  
+- Use Terraform Remote Backend (S3 + DynamoDB)  
+- Automate Terraform execution via Lambda  
+- Add multi-region drift detection  
+
+---
+
+## 🏁 Conclusion
 This project ensures infrastructure consistency and security by automatically detecting and fixing configuration drift using AWS services and Terraform.
 
-👨‍💻 Author
+---
 
+## 👨‍💻 Author
 Bhumika Mahale
