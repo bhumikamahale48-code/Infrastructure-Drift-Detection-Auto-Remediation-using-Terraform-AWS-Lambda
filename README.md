@@ -119,6 +119,15 @@ Manual changes performed:
 
 ---
 
+Port Added
+
+<img width="867" height="422" alt="image" src="https://github.com/user-attachments/assets/5675c5f0-e790-424c-880f-ef75ac2853a1" />
+
+SG Name Changed
+
+<img width="857" height="417" alt="image" src="https://github.com/user-attachments/assets/ea2c2a5d-e51c-47bf-962f-f63668bf97fb" />
+
+
 ### 🔹 Step 4: Detect Drift using Terraform
 
 ```bash
@@ -126,6 +135,12 @@ terraform plan
 ```
 
 Terraform detects configuration drift.
+
+Screenshot:
+
+Drift Detection
+
+<img width="853" height="473" alt="image" src="https://github.com/user-attachments/assets/2497a592-eb8b-4f6a-9abf-46eb05b987f3" />
 
 ---
 
@@ -137,6 +152,11 @@ Terraform detects configuration drift.
 ```bash
 rate(5 minutes)
 ```
+Screenshot:
+
+Lambda Test
+
+<img width="861" height="415" alt="image" src="https://github.com/user-attachments/assets/892ce5e7-eaf4-4cc4-8d02-c0873e363396" />
 
 ---
 
@@ -148,11 +168,25 @@ Lambda automatically fixes:
 
 ---
 
+Screenshot:
+
+SG Fixed
+
+<img width="879" height="420" alt="image" src="https://github.com/user-attachments/assets/55100f03-d8e7-4871-929a-570e2e9ceda5" />
+
+
 ### 🔹 Step 7: Logging
 
 All logs are stored in Amazon CloudWatch.
 
 ---
+
+Screenshot:
+
+CloudWatch Logs
+
+<img width="849" height="415" alt="image" src="https://github.com/user-attachments/assets/b27daf80-763f-4269-89c3-925049808712" />
+
 
 ## 🧠 Lambda Function Code
 
