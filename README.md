@@ -58,7 +58,7 @@ drift-detection-project/
 
 ### 🔹 Step 1: Provision Infrastructure using Terraform
 
-```bash
+bash
 terraform init
 terraform plan
 terraform apply -auto-approve
