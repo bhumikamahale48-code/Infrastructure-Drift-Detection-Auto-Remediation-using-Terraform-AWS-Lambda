@@ -68,10 +68,17 @@ Screenshots:
 terraform plan
 
 <img width="850" height="506" alt="image" src="https://github.com/user-attachments/assets/738a7e4f-7f9d-4203-9f1e-d5eedeb7ff1e" />
+
+
 ------
+
+
 terraform apply
 
-<img width="854" height="518" alt="image" src="https://github.com/user-attachments/assets/1de1bbdf-13dc-4046-b7df-e5d175a61820" />
+<img width="854" height="518" alt="image" src="https://github.com/user-attachments/assets/6e5d3f5e-5f86-42ea-854a-c399ede34dbe" />
+
+
+
 
 
 
