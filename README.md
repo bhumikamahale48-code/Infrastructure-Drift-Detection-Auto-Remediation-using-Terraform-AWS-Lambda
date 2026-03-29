@@ -63,7 +63,8 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
-![WhatsApp Image 2026-03-27 at 11 57 36 PM](https://github.com/user-attachments/assets/79cc5d41-d1fe-44e1-adf6-
+<img width="850" height="506" alt="image" src="https://github.com/user-attachments/assets/738a7e4f-7f9d-4203-9f1e-d5eedeb7ff1e" />
+
 
 
 
