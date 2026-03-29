@@ -1,4 +1,4 @@
-# 🚀 Infrastructure Drift Detection & Auto Remediation using Terraform & AWS Lambda
+<img width="850" height="506" alt="image" src="https://github.com/user-attachments/assets/4f22438c-0ee0-4402-93c3-7d18f2af14c4" /># 🚀 Infrastructure Drift Detection & Auto Remediation using Terraform & AWS Lambda
 
 ## 📌 Project Objective
 This project demonstrates how to detect and automatically remediate infrastructure drift in AWS environments using Terraform (Infrastructure as Code) and AWS Lambda (Serverless Automation).
@@ -63,6 +63,9 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
+![WhatsApp Image 2026-03-27 at 11 57 36 PM](https://github.com/user-attachments/assets/79cc5d41-d1fe-44e1-adf6-
+
+
 
 ---
 
