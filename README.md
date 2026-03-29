@@ -89,11 +89,27 @@ terraform apply
 ### 🔹 Step 2: Infrastructure Created
 
 Resources created:
-- EC2 Instance  
+- EC2 Instance 
 - Security Group  
 - S3 Bucket  
 
 ---
+Screenshots:
+
+EC2 Instance
+
+<img width="882" height="419" alt="image" src="https://github.com/user-attachments/assets/862e1d40-10d4-4143-887a-67aed60227d4" />
+
+----
+Security Group
+
+<img width="881" height="413" alt="image" src="https://github.com/user-attachments/assets/7a4c432b-62c9-41ef-991c-e13bd3bae1cb" />
+
+----
+S3 Bucket
+
+<img width="876" height="442" alt="image" src="https://github.com/user-attachments/assets/d4397e21-920d-4ce3-81f9-464014f7adc9" />
+
 
 ### 🔹 Step 3: Simulate Drift
 
