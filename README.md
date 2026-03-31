@@ -98,17 +98,20 @@ Screenshots:
 
 # EC2 Instance
 
-<img width="882" height="419" alt="image" src="https://github.com/user-attachments/assets/862e1d40-10d4-4143-887a-67aed60227d4" />
+<img width="855" height="385" alt="image" src="https://github.com/user-attachments/assets/50fdf5fc-1e96-4b36-8225-ed86bd4899f8" />
+
 
 ----
 # Security Group
 
-<img width="881" height="413" alt="image" src="https://github.com/user-attachments/assets/7a4c432b-62c9-41ef-991c-e13bd3bae1cb" />
+<img width="856" height="363" alt="image" src="https://github.com/user-attachments/assets/1109cf28-1352-418f-87b6-c65fddf0cdfd" />
+
 
 ----
 # S3 Bucket
 
-<img width="876" height="442" alt="image" src="https://github.com/user-attachments/assets/d4397e21-920d-4ce3-81f9-464014f7adc9" />
+<img width="841" height="367" alt="image" src="https://github.com/user-attachments/assets/b7d70790-b37a-47c5-9f15-4e073aada715" />
+
 
 
 ### 🔹 Step 3: Simulate Drift
@@ -121,11 +124,13 @@ Manual changes performed:
 
 # Port Added
 
-<img width="867" height="422" alt="image" src="https://github.com/user-attachments/assets/5675c5f0-e790-424c-880f-ef75ac2853a1" />
+<img width="848" height="361" alt="image" src="https://github.com/user-attachments/assets/a40b8743-b20e-4850-9059-a6c6a384c03c" />
+
 
 # SG Name Changed
 
-<img width="857" height="417" alt="image" src="https://github.com/user-attachments/assets/ea2c2a5d-e51c-47bf-962f-f63668bf97fb" />
+<img width="859" height="367" alt="image" src="https://github.com/user-attachments/assets/b154b25d-9fc7-4b8c-a0cc-2ece4b755108" />
+
 
 
 ### 🔹 Step 4: Detect Drift using Terraform
@@ -156,7 +161,8 @@ Screenshot:
 
 # Lambda Test
 
-<img width="861" height="415" alt="image" src="https://github.com/user-attachments/assets/892ce5e7-eaf4-4cc4-8d02-c0873e363396" />
+<img width="843" height="365" alt="image" src="https://github.com/user-attachments/assets/700a06eb-d010-4391-9c30-b6a682e3caf5" />
+
 
 ---
 
@@ -172,7 +178,8 @@ Screenshot:
 
 # SG Fixed
 
-<img width="879" height="420" alt="image" src="https://github.com/user-attachments/assets/55100f03-d8e7-4871-929a-570e2e9ceda5" />
+<img width="844" height="366" alt="image" src="https://github.com/user-attachments/assets/b2da895b-4352-4240-9f49-dfbafb46868a" />
+
 
 
 ### 🔹 Step 7: Logging
