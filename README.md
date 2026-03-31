@@ -192,7 +192,8 @@ Screenshot:
 
 # CloudWatch Logs
 
-<img width="849" height="415" alt="image" src="https://github.com/user-attachments/assets/b27daf80-763f-4269-89c3-925049808712" />
+<img width="933" height="404" alt="image" src="https://github.com/user-attachments/assets/0949d7b0-9a1d-4a75-a15f-29b5c5fff0d7" />
+
 
 
 ## 🧠 Lambda Function Code
