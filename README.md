@@ -1,11 +1,11 @@
-# 🚀 Infrastructure Drift Detection & Auto Remediation using Terraform & AWS Lambda
+#  Infrastructure Drift Detection & Auto Remediation using Terraform & AWS Lambda
 
-## 📌 Project Objective
+## Project Objective
 This project demonstrates how to detect and automatically remediate infrastructure drift in AWS environments using Terraform (Infrastructure as Code) and AWS Lambda (Serverless Automation).
 
 ---
 
-## ❗ Problem Statement
+##  Problem Statement
 In many organizations, infrastructure is managed using Terraform. However, engineers sometimes make manual changes via the AWS Console, causing configuration drift.
 
 This project ensures:
@@ -15,7 +15,7 @@ This project ensures:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Terraform  
 - AWS Lambda  
 - Amazon EventBridge  
@@ -26,7 +26,7 @@ This project ensures:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 Terraform → AWS Infrastructure  
         ↓  
@@ -42,7 +42,7 @@ CloudWatch Logs
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 drift-detection-project/  
 ├── main.tf  
@@ -54,9 +54,9 @@ drift-detection-project/
 
 ---
 
-## ⚙️ Implementation Steps
+##  Implementation Steps
 
-### 🔹 Step 1: Provision Infrastructure using Terraform
+###  Step 1: Provision Infrastructure using Terraform
 
 ```bash
 terraform init
@@ -86,7 +86,7 @@ Screenshots:
 
 ---
 
-### 🔹 Step 2: Infrastructure Created
+###  Step 2: Infrastructure Created
 
 Resources created:
 - EC2 Instance 
@@ -114,7 +114,7 @@ Screenshots:
 
 
 
-### 🔹 Step 3: Simulate Drift
+###  Step 3: Simulate Drift
 
 Manual changes performed:
 - Added Port 80 in Security Group  
@@ -133,7 +133,7 @@ Manual changes performed:
 
 
 
-### 🔹 Step 4: Detect Drift using Terraform
+###  Step 4: Detect Drift using Terraform
 
 ```bash
 terraform plan
@@ -149,7 +149,7 @@ Screenshot:
 
 ---
 
-### 🔹 Step 5: Configure Auto Remediation
+###  Step 5: Configure Auto Remediation
 
 - Created Lambda function  
 - Scheduled using EventBridge:
@@ -166,7 +166,7 @@ Screenshot:
 
 ---
 
-### 🔹 Step 6: Auto Remediation
+###  Step 6: Auto Remediation
 
 Lambda automatically fixes:
 - Removes unauthorized port 80  
@@ -182,7 +182,7 @@ Screenshot:
 
 
 
-### 🔹 Step 7: Logging
+###  Step 7: Logging
 
 All logs are stored in Amazon CloudWatch.
 
@@ -196,7 +196,7 @@ Screenshot:
 
 
 
-## 🧠 Lambda Function Code
+##  Lambda Function Code
 
 ```python
 import boto3
@@ -229,7 +229,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🔐 IAM Policy for Lambda
+##  IAM Policy for Lambda
 
 ```json
 {
@@ -247,7 +247,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 Terraform Apply → Infrastructure Created  
 ↓  
@@ -263,7 +263,7 @@ Logs stored in CloudWatch
 
 ---
 
-## 📊 Results
+##  Results
 - Drift successfully detected  
 - Automatic remediation implemented  
 - Logs verified in CloudWatch  
@@ -271,7 +271,7 @@ Logs stored in CloudWatch
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 - Integrate AWS Config for real-time drift detection  
 - Use Terraform Remote Backend (S3 + DynamoDB)  
 - Automate Terraform execution via Lambda  
@@ -279,10 +279,10 @@ Logs stored in CloudWatch
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 This project ensures infrastructure consistency and security by automatically detecting and fixing configuration drift using AWS services and Terraform.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 Bhumika Mahale
